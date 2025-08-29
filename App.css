@@ -1,0 +1,165 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f7fafc;
+  margin: 0;
+  padding: 0;
+  color: #1a202c;
+}
+
+.builder {
+  display: flex;
+  max-width: 900px;
+  margin: 2rem auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 220px;
+  padding: 1rem;
+  background: #2d3748;
+  color: #edf2f7;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h3 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.sidebar button {
+  background: #4a5568;
+  border: none;
+  color: #edf2f7;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sidebar button:hover {
+  background: #667eea;
+}
+
+.canvas {
+  flex-grow: 1;
+  padding: 1.5rem;
+  background: #f7fafc;
+  border-left: 1px solid #e2e8f0;
+  min-height: 400px;
+}
+
+.canvas h3 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.canvas > div {
+  margin-bottom: 1rem;
+}
+
+.canvas label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.canvas input[type="text"],
+.canvas input[type="email"],
+.canvas input[type="date"] {
+  border: 1px solid #cbd5e0;
+  padding: 6px 8px;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 300px;
+  font-size: 14px;
+  outline-offset: 2px;
+}
+
+.canvas input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-left: 0.25rem;
+}
+
+.sidebar
+  /* ...existing styles... */
+
+.sidebar img {
+  margin-right: 8px;
+}
+.sidebar h2 {
+  font-size: 22px;
+  color: #fff;
+  font-weight: bold;
+}
+.sidebar button {
+  box-shadow: 0 2px 4px rgba(74,85,104,0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sidebar button:hover {
+  background: #6c63ff;
+  box-shadow: 0 4px 8px rgba(108,99,255,0.12);
+}
+.canvas {
+  /* ...existing styles... */
+  border-radius: 8px;
+  background: #f7fafc;
+  border: 2px solid #e2e8f0;
+}
+.form-field {
+  transition: transform 0.1s;
+}
+.form-field:hover {
+  transform: scale(1.03);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
